@@ -55,7 +55,7 @@
 
 > 如果仅建模历史行为序列和候选物品的关系，当用户行为序列较为少时，难以获得较为准确的推荐结果。因此论文近一步显式建模了用户特征中每一个field的特征与候选物品的关系。例如一个新来的用户，如果是女性，则化妆品可能有更高的被推荐概率，如果是男性，则球鞋等有更高的被推荐可能性。IUIM模块与下述的ICIM模块在一定程度上也能解决冷启动的问题。
 
-![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/5.png)
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/6.png)
 
 #### Item-Context Interaction Module (ICIM)
 
@@ -73,11 +73,13 @@
 
 ![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/7.png)
 
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/8.png)
+
 ### Prediction Layer
 
 > Prediction Layer是多层全连接神经网络，最终的损失函数为交叉熵损失函数。
 
-![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/8.png)
+
 
 ## 实验效果
 
