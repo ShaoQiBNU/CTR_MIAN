@@ -94,12 +94,13 @@
 
 > 论文对比了MIAN和部分baseline模型在公开数据集和工业数据集上的离线效果，以及MIAN的线上效果，具体结果如下：
 
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/11.png)
+
 ### 模型性能
 
 > 论文对比了MIAN和DCN的性能，具体结果如下：
 
-![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/11.png)
-
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/12.png)
 
 ### Ablation study and Visualization Study
 
@@ -107,7 +108,7 @@
 
 > 论文对模型Multi-Interactive Layer的4个子模块分别做了ablation study，证明各个子模块的作用，具体如下：
 
-![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/12.png)
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/13.png)
 
 > 从图中可以看出，4个子模块的移除都会对模型的效果产生影响。
 >
@@ -119,7 +120,7 @@
 
 > 论文比较了不同提取用户序列行为模型的效果，具体如下：
 
-![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/13.png)
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/14.png)
 
 > 从图中可以看出，没有transformer，模型的效果会很差，因为它忽略了用户历史行为之间的依赖。
 >
@@ -131,6 +132,6 @@
 
 > 论文随机从Amazon数据集里筛选了14个case，可视化了GIM模块attention的权重，如图所示：
 
-![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/14.png)
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/15.png)
 
 > 从图中可以看出，interactive feature representations的权重均高于原始特征，可视化结果不仅证明了细粒度特征学习的重要性，而且表明MIAN能够学习候选项目与多种细粒度信息之间的深度交互关联。
