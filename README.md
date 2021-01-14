@@ -42,7 +42,7 @@
 >
 > 1. Pre-LN Transformer
 >
->    将用户历史行为序列中的每个物品向量转换为对应的hidden state，类似于DIEN中对于用户兴趣的提取，但是Transformer的并行计算可以在一定程度上降低计算耗时。Pre-LN Transformer的block与原始Transformer的block的区别主要在于将Layer Normalization的计算放在Multi-Head Self-Attention之前。具体参考：
+>    将用户历史行为序列中的每个物品向量转换为对应的hidden state，类似于DIEN中对于用户兴趣的提取，但是Transformer的并行计算可以在一定程度上降低计算耗时。Pre-LN Transformer的block与原始Transformer的block的区别主要在于将Layer Normalization的计算放在Multi-Head Self-Attention之前。具体参考：https://zhuanlan.zhihu.com/p/84614490
 >
 > 2. Attention
 >
