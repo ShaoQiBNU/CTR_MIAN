@@ -57,6 +57,12 @@
 
 ![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/6.png)
 
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/7.png)
+
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/8.png)
+
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/9.png)
+
 #### Item-Context Interaction Module (ICIM)
 
 > ICIM模块与IUIM模块结构相同，用于显式建模上下文特征中每一个field的特征与候选物品的相关性，如下：
@@ -71,9 +77,8 @@
 >
 > DCN论文中表明，显式建模低阶特征和高阶特征的交互，可以有效提升CTR预估效果。因此借鉴此思想，论文近一步增加了GIM模块，来显式建模低阶特征和高阶特征的关系，结构如下：
 
-![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/7.png)
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/10.png)
 
-![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/8.png)
 
 ### Prediction Layer
 
@@ -97,7 +102,7 @@
 
 > 论文对模型Multi-Interactive Layer的4个子模块分别做了ablation study，证明各个子模块的作用，具体如下：
 
-![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/9.png)
+
 
 > 从图中可以看出，4个子模块的移除都会对模型的效果产生影响。
 >
@@ -109,7 +114,7 @@
 
 > 论文比较了不同提取用户序列行为模型的效果，具体如下：
 
-![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/10.png)
+
 
 > 从图中可以看出，没有transformer，模型的效果会很差，因为它忽略了用户历史行为之间的依赖。
 >
