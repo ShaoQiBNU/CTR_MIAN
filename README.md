@@ -48,7 +48,8 @@
 >
 >    用于计算每一个hidden state与候选物品之间的相关性，并进行加权求和得到IBIM模块的输出
 
-![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/4.png)
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/5.png)
+
 
 #### Item-User Interaction Module (IUIM)
 
@@ -60,7 +61,7 @@
 
 > ICIM模块与IUIM模块结构相同，用于显式建模上下文特征中每一个field的特征与候选物品的相关性，如下：
 
-![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/6.png)
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/5.png)
 
 #### Global Interaction Module (GIM)
 
