@@ -28,7 +28,7 @@
 
 > 模型的输入特征主要包含四部分，分别是候选物品特征、用户历史行为序列、用户特征和上下文特征。原始输入特征主要是离散特征，经过Embedding layer转换为对应的embedding。经过转换后，候选物品特征、用户历史行为序列、用户特征和上下文特征分别表示为：
 
-Img3
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/3.png)
 
 ### Multi-Interactive Layer
 
@@ -36,7 +36,7 @@ Img3
 
 #### Item-Behaviors Interaction Module (IBIM)
 
-![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/3.png)
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/4.png)
 
 > IBIM模块主要包含两部分：
 >
