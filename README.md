@@ -12,7 +12,7 @@
 >
 > 上述所说的三点问题可以由下图表示：
 
-img1
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/1.png)
 
 > 在推荐系统中，有众多的用户特征和上下文特征可以挖掘，使用这些特征可以有效缓解上述的问题，特别是当用户历史行为较少的情况下。如上图中，如果候选物品是机械键盘，这与用户当前的职业“程序员”可能较为匹配，但从用户历史行为中可能难以发现这一点。
 
@@ -22,7 +22,7 @@ img1
 
 > MIAN的整体架构如图所示，主要包含三部分，分别是Embedding Layer、Multi-Interactive Layer和Prediction Layer，接下来将分别进行介绍。
 
-Img2
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/2.png)
 
 ### embedding layer
 
@@ -36,7 +36,7 @@ Img3
 
 #### Item-Behaviors Interaction Module (IBIM)
 
-img
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/3.png)
 
 > IBIM模块主要包含两部分：
 >
@@ -48,19 +48,19 @@ img
 >
 >    用于计算每一个hidden state与候选物品之间的相关性，并进行加权求和得到IBIM模块的输出
 
-img
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/4.png)
 
 #### Item-User Interaction Module (IUIM)
 
 > 如果仅建模历史行为序列和候选物品的关系，当用户行为序列较为少时，难以获得较为准确的推荐结果。因此论文近一步显式建模了用户特征中每一个field的特征与候选物品的关系。例如一个新来的用户，如果是女性，则化妆品可能有更高的被推荐概率，如果是男性，则球鞋等有更高的被推荐可能性。IUIM模块与下述的ICIM模块在一定程度上也能解决冷启动的问题。
 
-img
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/5.png)
 
 #### Item-Context Interaction Module (ICIM)
 
 > ICIM模块与IUIM模块结构相同，用于显式建模上下文特征中每一个field的特征与候选物品的相关性，如下：
 
-Img
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/6.png)
 
 #### Global Interaction Module (GIM)
 
@@ -70,13 +70,13 @@ Img
 >
 > DCN论文中表明，显式建模低阶特征和高阶特征的交互，可以有效提升CTR预估效果。因此借鉴此思想，论文近一步增加了GIM模块，来显式建模低阶特征和高阶特征的关系，结构如下：
 
-
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/7.png)
 
 ### Prediction Layer
 
 > Prediction Layer是多层全连接神经网络，最终的损失函数为交叉熵损失函数。
 
-img
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/8.png)
 
 ## 实验效果
 
@@ -94,7 +94,7 @@ img
 
 > 论文对模型Multi-Interactive Layer的4个子模块分别做了ablation study，证明各个子模块的作用，具体如下：
 
-img
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/9.png)
 
 > 从图中可以看出，4个子模块的移除都会对模型的效果产生影响。
 >
@@ -106,7 +106,7 @@ img
 
 > 论文比较了不同提取用户序列行为模型的效果，具体如下：
 
-img
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/10.png)
 
 > 从图中可以看出，没有transformer，模型的效果会很差，因为它忽略了用户历史行为之间的依赖。
 >
@@ -118,6 +118,6 @@ img
 
 > 论文随机从Amazon数据集里筛选了14个case，可视化了GIM模块attention的权重，如图所示：
 
-img
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/11.png)
 
 > 从图中可以看出，interactive feature representations的权重均高于原始特征，可视化结果不仅证明了细粒度特征学习的重要性，而且表明MIAN能够学习候选项目与多种细粒度信息之间的深度交互关联。
