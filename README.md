@@ -61,7 +61,7 @@
 
 > ICIM模块与IUIM模块结构相同，用于显式建模上下文特征中每一个field的特征与候选物品的相关性，如下：
 
-![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/5.png)
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/6.png)
 
 #### Global Interaction Module (GIM)
 
