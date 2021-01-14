@@ -79,6 +79,9 @@
 >
 > DCN论文中表明，显式建模低阶特征和高阶特征的交互，可以有效提升CTR预估效果。因此借鉴此思想，论文近一步增加了GIM模块，来显式建模低阶特征和高阶特征的关系，结构如下：
 
+
+![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/16.png)
+
 ![image](https://github.com/ShaoQiBNU/CTR_MIAN/blob/main/img/10.png)
 
 
